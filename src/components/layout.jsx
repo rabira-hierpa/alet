@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ isHomePage, children }) => {
   // const {
@@ -29,18 +30,12 @@ const Layout = ({ isHomePage, children }) => {
   `)
 
   return (
-    <div className="global-wrapper" data-is-root-path={isHomePage}>
+    <div className="" data-is-root-path={isHomePage}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
       <main>{children}</main>
 
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-        {` `}
-        And <a href="https://wordpress.org/">WordPress</a>
-      </footer>
+      <Footer />
     </div>
   )
 }
