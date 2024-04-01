@@ -1,20 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
-import AletLogo from "../images/logo.jpeg"
+import AletLogo from "../images/alet-logo.jpeg"
 
 const Header = ({ siteTitle }) => {
   return (
     <header className="lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-0 py-2">
       <div className="flex-1 flex justify-between items-center">
-        <Link to="/" className="flex text-lg font-semibold">
+        <Link to="/" className="flex align-center text-lg font-semibold">
           <img
             src={AletLogo}
-            width="50"
-            height="50"
+            width="55"
+            height="55"
             className="p-2"
             alt="Alet Logo"
           />
-          <div className="mt-3 text-red-600">Alet</div>
+          <div className="mt-3 text-primary">Alet Trading</div>
         </Link>
       </div>
       <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
@@ -38,50 +38,36 @@ const Header = ({ siteTitle }) => {
           <ul className="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
             <li className="py-2 lg:py-0 ">
               <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                to="/blog"
+                className="text-primary hover:pb-4 hover:border-b-4 hover:border-secondary"
+                to="/"
               >
-                Blog
+                Home
               </Link>
             </li>
+
             <li className="py-2 lg:py-0 ">
               <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                to="/projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0 ">
-              <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                to="/apps"
-              >
-                Apps
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0 ">
-              <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                to="/designs"
-              >
-                Designs
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0 ">
-              <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                to="/my-journey"
-              >
-                My Journey
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0 ">
-              <Link
-                className="text-red-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
+                className="text-primary hover:pb-4 hover:border-b-4 hover:border-secondary"
                 to="/about"
               >
                 About
+              </Link>
+            </li>
+            <li className="py-2 lg:py-0 ">
+              <Link
+                className="text-primary hover:pb-4 hover:border-b-4 hover:border-secondary"
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </li>
+
+            <li className="py-2 lg:py-0 ">
+              <Link
+                className="text-primary hover:pb-4 hover:border-b-4 hover:border-secondary"
+                to="/my-journey"
+              >
+                Service
               </Link>
             </li>
           </ul>
